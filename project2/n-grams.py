@@ -100,7 +100,7 @@ def getAllNGrams(langFiles):
 
     return allNGrams
 
-########################################## Checkpoint, can test code above before proceeding #############################################
+
 
 
 def compareLang(testFile,langFiles,N):
