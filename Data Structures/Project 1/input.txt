@@ -1,0 +1,11 @@
+gcc -O3 -std=c99 -Wall -Wshadow -Wvla -pedantic shell_array.c shell_list.c pa1.c -o pa1
+./pa1 -a 15.b 15sa.b
+./pa1 -a 1K.b 1Ksa.b
+./pa1 -a 10K.b 10Ksa.b
+./pa1 -a 100K.b 100Ksa.b
+./pa1 -a 1M.b 1Msa.b
+./pa1 -l 15.b 15sl.b
+./pa1 -l 1K.b 1Ksl.b
+./pa1 -l 10K.b 10Ksl.b
+./pa1 -l 100K.b 100Ksl.b
+./pa1 -l 1M.b 1Msl.b

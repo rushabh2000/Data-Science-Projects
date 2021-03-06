@@ -1,0 +1,233 @@
+==1198== Memcheck, a memory error detector
+==1198== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==1198== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==1198== Command: ./hw13 inputs/test1
+==1198== Parent PID: 1197
+==1198== 
+--1198-- 
+--1198-- Valgrind options:
+--1198--    --tool=memcheck
+--1198--    --log-file=memcheck.txt
+--1198--    --leak-check=full
+--1198--    --verbose
+--1198-- Contents of /proc/version:
+--1198--   Linux version 2.6.32-754.23.1.el6.x86_64 (mockbuild@x86-01.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-23) (GCC) ) #1 SMP Thu Sep 26 12:05:41 UTC 2019
+--1198-- Arch and hwcaps: AMD64, amd64-sse3-cx16-avx
+--1198-- Page sizes: currently 4096, max supported 4096
+--1198-- Valgrind library directory: /usr/lib64/valgrind
+--1198-- Reading syms from /home/shay/a/ranka0/ECE264/solutions/Part3/HW13Arithmetic1/hw13
+--1198-- Reading syms from /usr/lib64/valgrind/memcheck-amd64-linux
+--1198--    object doesn't have a dynamic symbol table
+--1198-- Reading syms from /lib64/ld-2.12.so
+--1198--   Considering /usr/lib/debug/.build-id/97/af4b77212f74cff72b6c013e6aa2d74a97ef60.debug ..
+--1198--   .. build-id is valid
+--1198-- Scheduler: using generic scheduler lock implementation.
+--1198-- Reading suppressions file: /usr/lib64/valgrind/default.supp
+==1198== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-1198-by-ranka0-on-ecegrid-thin5.ecn.purdue.edu
+==1198== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-1198-by-ranka0-on-ecegrid-thin5.ecn.purdue.edu
+==1198== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-1198-by-ranka0-on-ecegrid-thin5.ecn.purdue.edu
+==1198== 
+==1198== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==1198== don't want to do, unless you know exactly what you're doing,
+==1198== or are doing some strange experiment):
+==1198==   /usr/lib64/valgrind/../../bin/vgdb --pid=1198 ...command...
+==1198== 
+==1198== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==1198==   /path/to/gdb ./hw13
+==1198== and then give GDB the following command
+==1198==   target remote | /usr/lib64/valgrind/../../bin/vgdb --pid=1198
+==1198== --pid is optional if only one valgrind process is running
+==1198== 
+--1198-- REDIR: 0x3289817f90 (strlen) redirected to 0x38049551 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--1198-- Reading syms from /usr/lib64/valgrind/vgpreload_core-amd64-linux.so
+--1198-- Reading syms from /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so
+--1198-- REDIR: 0x3289817da0 (index) redirected to 0x4a07c30 (index)
+--1198-- REDIR: 0x3289817e20 (strcmp) redirected to 0x4a08570 (strcmp)
+--1198-- Reading syms from /lib64/libc-2.12.so
+--1198--   Considering /usr/lib/debug/.build-id/a5/f93642576869a169bacf9771c674e0cb91fcbb.debug ..
+--1198--   .. build-id is valid
+--1198-- REDIR: 0x3289c84d80 (strcasecmp) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--1198-- REDIR: 0x3289c87040 (strncasecmp) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--1198-- REDIR: 0x3289c82cf0 (__GI_strrchr) redirected to 0x4a07ab0 (__GI_strrchr)
+--1198-- REDIR: 0x3289c7aac0 (malloc) redirected to 0x4a069ac (malloc)
+--1198-- REDIR: 0x3289c83400 (memchr) redirected to 0x4a08610 (memchr)
+--1198-- REDIR: 0x3289c89720 (memcpy) redirected to 0x4a08b60 (memcpy)
+--1198-- REDIR: 0x3289c811d0 (strlen) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--1198-- REDIR: 0x3289d339d0 (__strlen_sse42) redirected to 0x4a07f90 (strlen)
+--1198-- REDIR: 0x3289c80c20 (strcpy) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--1198-- REDIR: 0x3289d34460 (???) redirected to 0x4a07fd0 (strcpy)
+--1198-- REDIR: 0x3289c81210 (__GI_strlen) redirected to 0x4a07fb0 (__GI_strlen)
+--1198-- REDIR: 0x3289c8aba0 (strchrnul) redirected to 0x4a09fb0 (strchrnul)
+--1198-- REDIR: 0x3289c7b920 (free) redirected to 0x4a063a9 (free)
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x4008A4: printList (main.c:19)
+==1198==    by 0x40096E: main (main.c:52)
+==1198== 
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x4008F0: printList (main.c:27)
+==1198==    by 0x40096E: main (main.c:52)
+==1198== 
+--1198-- REDIR: 0x3289c7f6e0 (index) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--1198-- REDIR: 0x3289d28650 (__strchr_sse42) redirected to 0x4a07b40 (index)
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x400E43: calculate (calculate.c:54)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x4008A4: printList (main.c:19)
+==1198==    by 0x40098A: main (main.c:55)
+==1198== 
+==1198== Invalid read of size 8
+==1198==    at 0x4008C2: printList (main.c:29)
+==1198==    by 0x40098A: main (main.c:55)
+==1198==  Address 0x4c3f328 is 24 bytes inside a block of size 32 free'd
+==1198==    at 0x4A06430: free (vg_replace_malloc.c:446)
+==1198==    by 0x400BC2: deleteNode (list.c:132)
+==1198==    by 0x400E1E: calculate (calculate.c:79)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+==1198== Invalid read of size 1
+==1198==    at 0x3289C47D0C: vfprintf (vfprintf.c:1641)
+==1198==    by 0x3289C4F069: printf (printf.c:35)
+==1198==    by 0x4008E2: printList (main.c:30)
+==1198==    by 0x40098A: main (main.c:55)
+==1198==  Address 0x4c3f310 is 0 bytes inside a block of size 32 free'd
+==1198==    at 0x4A06430: free (vg_replace_malloc.c:446)
+==1198==    by 0x400BC2: deleteNode (list.c:132)
+==1198==    by 0x400E1E: calculate (calculate.c:79)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+==1198== Invalid read of size 1
+==1198==    at 0x3289C7178E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1309)
+==1198==    by 0x3289C4806F: vfprintf (vfprintf.c:1641)
+==1198==    by 0x3289C4F069: printf (printf.c:35)
+==1198==    by 0x4008E2: printList (main.c:30)
+==1198==    by 0x40098A: main (main.c:55)
+==1198==  Address 0x4c3f311 is 1 bytes inside a block of size 32 free'd
+==1198==    at 0x4A06430: free (vg_replace_malloc.c:446)
+==1198==    by 0x400BC2: deleteNode (list.c:132)
+==1198==    by 0x400E1E: calculate (calculate.c:79)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+==1198== Invalid read of size 1
+==1198==    at 0x3289C71830: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1341)
+==1198==    by 0x3289C4806F: vfprintf (vfprintf.c:1641)
+==1198==    by 0x3289C4F069: printf (printf.c:35)
+==1198==    by 0x4008E2: printList (main.c:30)
+==1198==    by 0x40098A: main (main.c:55)
+==1198==  Address 0x4c3f310 is 0 bytes inside a block of size 32 free'd
+==1198==    at 0x4A06430: free (vg_replace_malloc.c:446)
+==1198==    by 0x400BC2: deleteNode (list.c:132)
+==1198==    by 0x400E1E: calculate (calculate.c:79)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x400A9D: deleteList (list.c:64)
+==1198==    by 0x4009A2: main (main.c:61)
+==1198== 
+==1198== 
+==1198== HEAP SUMMARY:
+==1198==     in use at exit: 568 bytes in 1 blocks
+==1198==   total heap usage: 7 allocs, 6 frees, 744 bytes allocated
+==1198== 
+==1198== Searching for pointers to 1 not-freed blocks
+==1198== Checked 1,114,224 bytes
+==1198== 
+==1198== LEAK SUMMARY:
+==1198==    definitely lost: 0 bytes in 0 blocks
+==1198==    indirectly lost: 0 bytes in 0 blocks
+==1198==      possibly lost: 0 bytes in 0 blocks
+==1198==    still reachable: 568 bytes in 1 blocks
+==1198==         suppressed: 0 bytes in 0 blocks
+==1198== Reachable blocks (those to which a pointer was found) are not shown.
+==1198== To see them, rerun with: --leak-check=full --show-reachable=yes
+==1198== 
+==1198== Use --track-origins=yes to see where uninitialised values come from
+==1198== ERROR SUMMARY: 12 errors from 9 contexts (suppressed: 8 from 6)
+==1198== 
+==1198== 1 errors in context 1 of 9:
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x400A9D: deleteList (list.c:64)
+==1198==    by 0x4009A2: main (main.c:61)
+==1198== 
+==1198== 
+==1198== 1 errors in context 2 of 9:
+==1198== Invalid read of size 1
+==1198==    at 0x3289C7178E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1309)
+==1198==    by 0x3289C4806F: vfprintf (vfprintf.c:1641)
+==1198==    by 0x3289C4F069: printf (printf.c:35)
+==1198==    by 0x4008E2: printList (main.c:30)
+==1198==    by 0x40098A: main (main.c:55)
+==1198==  Address 0x4c3f311 is 1 bytes inside a block of size 32 free'd
+==1198==    at 0x4A06430: free (vg_replace_malloc.c:446)
+==1198==    by 0x400BC2: deleteNode (list.c:132)
+==1198==    by 0x400E1E: calculate (calculate.c:79)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+==1198== 
+==1198== 1 errors in context 3 of 9:
+==1198== Invalid read of size 8
+==1198==    at 0x4008C2: printList (main.c:29)
+==1198==    by 0x40098A: main (main.c:55)
+==1198==  Address 0x4c3f328 is 24 bytes inside a block of size 32 free'd
+==1198==    at 0x4A06430: free (vg_replace_malloc.c:446)
+==1198==    by 0x400BC2: deleteNode (list.c:132)
+==1198==    by 0x400E1E: calculate (calculate.c:79)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+==1198== 
+==1198== 1 errors in context 4 of 9:
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x4008A4: printList (main.c:19)
+==1198==    by 0x40098A: main (main.c:55)
+==1198== 
+==1198== 
+==1198== 1 errors in context 5 of 9:
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x400E43: calculate (calculate.c:54)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+==1198== 
+==1198== 1 errors in context 6 of 9:
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x4008F0: printList (main.c:27)
+==1198==    by 0x40096E: main (main.c:52)
+==1198== 
+==1198== 
+==1198== 1 errors in context 7 of 9:
+==1198== Conditional jump or move depends on uninitialised value(s)
+==1198==    at 0x4008A4: printList (main.c:19)
+==1198==    by 0x40096E: main (main.c:52)
+==1198== 
+==1198== 
+==1198== 2 errors in context 8 of 9:
+==1198== Invalid read of size 1
+==1198==    at 0x3289C71830: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1341)
+==1198==    by 0x3289C4806F: vfprintf (vfprintf.c:1641)
+==1198==    by 0x3289C4F069: printf (printf.c:35)
+==1198==    by 0x4008E2: printList (main.c:30)
+==1198==    by 0x40098A: main (main.c:55)
+==1198==  Address 0x4c3f310 is 0 bytes inside a block of size 32 free'd
+==1198==    at 0x4A06430: free (vg_replace_malloc.c:446)
+==1198==    by 0x400BC2: deleteNode (list.c:132)
+==1198==    by 0x400E1E: calculate (calculate.c:79)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+==1198== 
+==1198== 3 errors in context 9 of 9:
+==1198== Invalid read of size 1
+==1198==    at 0x3289C47D0C: vfprintf (vfprintf.c:1641)
+==1198==    by 0x3289C4F069: printf (printf.c:35)
+==1198==    by 0x4008E2: printList (main.c:30)
+==1198==    by 0x40098A: main (main.c:55)
+==1198==  Address 0x4c3f310 is 0 bytes inside a block of size 32 free'd
+==1198==    at 0x4A06430: free (vg_replace_malloc.c:446)
+==1198==    by 0x400BC2: deleteNode (list.c:132)
+==1198==    by 0x400E1E: calculate (calculate.c:79)
+==1198==    by 0x40097A: main (main.c:53)
+==1198== 
+--1198-- 
+--1198-- used_suppression:      4 U1004-ARM-_dl_relocate_object
+--1198-- used_suppression:      4 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==1198== 
+==1198== ERROR SUMMARY: 12 errors from 9 contexts (suppressed: 8 from 6)
