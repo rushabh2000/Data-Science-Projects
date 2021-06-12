@@ -1,13 +1,6 @@
-# 337_cdl
-A guide to the project files for the cooperative design lab in ECE33700.
 
-Team members contributing to this project were:
-Sam Kovnar
-Leah Crisco
-Rushabh Ranka
 
-All files for this project can be found in
-~mg78/ece337/CDL
+
 
 Source/
 	top_level_cdl.sv - top level RTL code for entire design
