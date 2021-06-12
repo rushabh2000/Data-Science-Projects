@@ -1,0 +1,342 @@
+Synthesizing design: data_buffer.sv
+dc_shell-t -x "source -echo do_mapping.tcl"
+                                        
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+                                        
+               Version K-2015.06-SP1 for linux64 - Jul 21, 2015 
+                                        
+                    Copyright (c) 1988 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/ecegrid/a/mg78/.synopsys_dv_prefs.tcl
+# Step 1:  Read in the source file
+analyze -format sverilog -lib WORK {ahb_lite_interface.sv adder_1bit.sv adder_nbit.sv usb_tx.sv tx_controller.sv rx_decoder.sv edge_detector.sv tx_encoder.sv rx_eop.sv flex_counter.sv flex_counter2.sv flex_pts_sr.sv flex_stp_sr.sv rx_rcu_usb.sv rx_timer.sv sr_8bit.sv start_bit_det.sv sync_high.sv sync_low.sv tx_timer.sv usb_rx.sv tx_pts.sv data_buffer.sv}
+Running PRESTO HDLC
+Compiling source file ./source/ahb_lite_interface.sv
+Compiling source file ./source/adder_1bit.sv
+Compiling source file ./source/adder_nbit.sv
+Compiling source file ./source/usb_tx.sv
+Compiling source file ./source/tx_controller.sv
+Compiling source file ./source/rx_decoder.sv
+Compiling source file ./source/edge_detector.sv
+Compiling source file ./source/tx_encoder.sv
+Compiling source file ./source/rx_eop.sv
+Compiling source file ./source/flex_counter.sv
+Compiling source file ./source/flex_counter2.sv
+Compiling source file ./source/flex_pts_sr.sv
+Compiling source file ./source/flex_stp_sr.sv
+Compiling source file ./source/rx_rcu_usb.sv
+Compiling source file ./source/rx_timer.sv
+Compiling source file ./source/sr_8bit.sv
+Compiling source file ./source/start_bit_det.sv
+Warning:  ./source/start_bit_det.sv:49: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/start_bit_det.sv:53: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Warning:  ./source/start_bit_det.sv:57: The construct 'immediate assertion' is not supported in synthesis; it is ignored. (VER-708)
+Compiling source file ./source/sync_high.sv
+Warning:  ./source/start_bit_det.sv:47: delay controls are ignored for synthesis. (VER-176)
+Compiling source file ./source/sync_low.sv
+Compiling source file ./source/tx_timer.sv
+Compiling source file ./source/usb_rx.sv
+Compiling source file ./source/tx_pts.sv
+Compiling source file ./source/data_buffer.sv
+Presto compilation completed successfully.
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/dw_foundation.sldb'
+elaborate data_buffer -lib WORK
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/gtech.db'
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'osu05_stdcells'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine data_buffer line 34 in file
+		'./source/data_buffer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| tx_packet_data_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      r_ptr_reg      | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      w_ptr_reg      | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    curr_data_reg    | Flip-flop |  512  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|  data_buffer/69  |   64   |    8    |      6       | N  |
+===========================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'data_buffer'.
+uniquify
+# Step 2: Set design constraints
+# Uncomment below to set timing, area, power, etc. constraints
+# set_max_delay <delay> -from "<input>" -to "<output>"
+# set_max_area <area>
+# set_max_total_power <power> mW
+create_clock "clk" -name "clk" -period 1
+# Step 3: Compile the design
+compile -map_effort medium
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.1 |     *     |
+| Licensed DW Building Blocks        | K-2015.06-DWBB_201506.1 |     *     |
+============================================================================
+
+
+Information: There are 14 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'data_buffer'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'data_buffer_DW01_sub_0'
+  Mapping 'data_buffer_DW_cmp_0'
+  Processing 'data_buffer_DW01_inc_0'
+  Processing 'data_buffer_DW01_inc_1'
+  Processing 'data_buffer_DW01_sub_1'
+  Processing 'data_buffer_DW01_sub_2'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:27 2046870.0      2.26    1417.9       0.0                          
+    0:00:27 2046870.0      2.26    1417.9       0.0                          
+    0:00:27 2046870.0      2.26    1417.9       0.0                          
+    0:00:27 2046870.0      2.26    1417.9       0.0                          
+    0:00:27 2046870.0      2.26    1417.9       0.0                          
+    0:00:28 1996182.0      2.61    1502.6       0.0                          
+    0:00:28 2002086.0      2.52    1495.0       0.0                          
+    0:00:28 2002302.0      3.07    1504.5       0.0                          
+    0:00:28 2002806.0      2.41    1483.3       0.0                          
+    0:00:28 2003310.0      3.03    1484.5       0.0                          
+    0:00:28 2003670.0      2.42    1464.8       0.0                          
+    0:00:28 2003814.0      2.50    1462.7       0.0                          
+    0:00:28 2003958.0      2.51    1463.8       0.0                          
+    0:00:29 2003886.0      2.43    1458.1       0.0                          
+    0:00:29 2004030.0      2.49    1455.5       0.0                          
+    0:00:29 2004606.0      2.34    1450.1       0.0                          
+    0:00:29 2004822.0      2.33    1447.8       0.0                          
+    0:00:29 2005038.0      2.31    1437.4       0.0                          
+    0:00:29 2005254.0      2.30    1427.3       0.0                          
+    0:00:29 2005614.0      2.29    1423.0       0.0                          
+    0:00:29 2005830.0      2.29    1421.4       0.0                          
+    0:00:29 2006046.0      2.28    1417.5       0.0                          
+    0:00:29 2006046.0      2.28    1417.5       0.0                          
+    0:00:29 2006046.0      2.28    1417.5       0.0                          
+    0:00:29 2006046.0      2.28    1417.5       0.0                          
+    0:00:29 2006046.0      2.28    1417.5       0.0                          
+    0:00:29 2006046.0      2.28    1417.5       0.0                          
+    0:00:29 2006046.0      2.28    1417.5       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:29 2006046.0      2.28    1417.5       0.0                          
+    0:00:29 2007198.0      2.27    1416.3       0.0 curr_data_reg[4][0]/D    
+    0:00:29 2008566.0      2.26    1409.3       0.0 curr_data_reg[1][4]/D    
+    0:00:29 2009718.0      2.24    1398.8       0.0 curr_data_reg[40][0]/D   
+    0:00:29 2010438.0      2.23    1398.6       0.0 curr_data_reg[1][4]/D    
+    0:00:29 2011302.0      2.23    1398.0       0.0 curr_data_reg[22][0]/D   
+    0:00:30 2011446.0      2.23    1396.5       0.0 curr_data_reg[22][0]/D   
+    0:00:30 2011806.0      2.22    1390.5       0.0 curr_data_reg[22][0]/D   
+    0:00:30 2015262.0      2.17    1354.2       0.0 curr_data_reg[22][0]/D   
+    0:00:30 2016774.0      2.15    1343.5       0.0 curr_data_reg[22][0]/D   
+    0:00:30 2017575.0      2.14    1337.3       0.0 curr_data_reg[22][0]/D   
+    0:00:30 2017656.0      2.14    1337.1       0.0                          
+    0:00:30 2017656.0      2.14    1337.1       0.0                          
+    0:00:30 2019888.0      2.14    1335.8       0.0                          
+    0:00:30 2019960.0      2.13    1334.6       0.0                          
+    0:00:30 2020896.0      2.11    1325.2       0.0                          
+    0:00:31 2022912.0      2.10    1323.7       0.0                          
+    0:00:31 2024208.0      2.10    1322.9       0.0                          
+    0:00:31 2024208.0      2.10    1322.5       0.0                          
+    0:00:31 2024208.0      2.10    1322.1       0.0                          
+    0:00:32 2024712.0      2.10    1321.8       0.0                          
+    0:00:32 2024928.0      2.10    1321.2       0.0                          
+    0:00:32 2025216.0      2.10    1321.2       0.0                          
+    0:00:33 2025216.0      2.10    1319.2       0.0                          
+    0:00:33 2025216.0      2.10    1319.1       0.0                          
+    0:00:33 2025936.0      2.10    1316.5       0.0                          
+    0:00:33 2026008.0      2.10    1314.6       0.0                          
+    0:00:33 2026080.0      2.10    1314.2       0.0                          
+    0:00:33 2026152.0      2.10    1314.0       0.0                          
+    0:00:33 2027376.0      2.10    1313.2       0.0                          
+    0:00:33 2027160.0      2.10    1313.1       0.0                          
+    0:00:33 2027160.0      2.10    1313.1       0.0                          
+    0:00:34 2027880.0      2.10    1312.9       0.0                          
+    0:00:34 2027808.0      2.10    1312.8       0.0                          
+    0:00:34 2029320.0      2.10    1308.0       0.0                          
+    0:00:34 2029320.0      2.10    1308.0       0.0                          
+    0:00:34 2029536.0      2.10    1307.3       0.0                          
+    0:00:34 2029536.0      2.10    1306.9       0.0                          
+    0:00:34 2030040.0      2.10    1306.4       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:34 2030040.0      2.10    1306.4       0.0                          
+    0:00:34 2030040.0      2.10    1306.4       0.0                          
+    0:00:34 2009448.0      2.17    1311.5       0.0                          
+    0:00:35 2007360.0      2.17    1313.5       0.0                          
+    0:00:35 2006568.0      2.17    1316.0       0.0                          
+    0:00:35 2006280.0      2.17    1316.0       0.0                          
+    0:00:35 2005992.0      2.17    1316.0       0.0                          
+    0:00:35 2005992.0      2.17    1316.0       0.0                          
+    0:00:35 2006496.0      2.13    1311.7       0.0 curr_data_reg[40][1]/D   
+    0:00:35 2007072.0      2.10    1307.7       0.0 curr_data_reg[25][1]/D   
+    0:00:35 2007072.0      2.10    1305.9       0.0 curr_data_reg[2][1]/D    
+    0:00:35 2007216.0      2.10    1306.1       0.0 curr_data_reg[2][2]/D    
+    0:00:35 2007648.0      2.08    1299.8       0.0 curr_data_reg[3][2]/D    
+    0:00:36 2007648.0      2.08    1299.8       0.0                          
+    0:00:36 2006712.0      2.08    1300.4       0.0                          
+    0:00:36 2006712.0      2.08    1300.4       0.0                          
+    0:00:36 2006712.0      2.08    1300.4       0.0                          
+    0:00:36 2006712.0      2.08    1300.4       0.0                          
+    0:00:36 2006712.0      2.08    1300.4       0.0                          
+    0:00:36 2006712.0      2.08    1300.4       0.0                          
+    0:00:36 2006640.0      2.08    1300.4       0.0                          
+    0:00:36 2006568.0      2.08    1300.4       0.0                          
+    0:00:38 2006352.0      2.08    1299.9       0.0                          
+    0:00:38 2006352.0      2.08    1299.3       0.0                          
+    0:00:38 2006352.0      2.08    1298.2       0.0                          
+    0:00:38 2007648.0      2.08    1294.9       0.0                          
+    0:00:38 2008368.0      2.08    1294.3       0.0                          
+    0:00:39 2009160.0      2.08    1293.6       0.0                          
+    0:00:39 2009160.0      2.08    1293.4       0.0                          
+    0:00:39 2009520.0      2.08    1293.4       0.0                          
+    0:00:39 2009736.0      2.08    1293.3       0.0                          
+    0:00:39 2009736.0      2.08    1293.3       0.0                          
+    0:00:39 2009808.0      2.08    1293.2       0.0                          
+    0:00:39 2009736.0      2.08    1293.1       0.0                          
+    0:00:39 2010168.0      2.08    1293.0       0.0                          
+    0:00:39 2010384.0      2.08    1292.9       0.0                          
+    0:00:39 2010600.0      2.08    1292.9       0.0                          
+    0:00:39 2011608.0      2.08    1292.4       0.0                          
+    0:00:39 2012688.0      2.08    1291.6       0.0                          
+    0:00:39 2013048.0      2.08    1291.1       0.0                          
+    0:00:39 2013048.0      2.08    1291.0       0.0                          
+    0:00:40 2013048.0      2.08    1291.0       0.0                          
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+# Step 4: Output reports
+report_timing -path full -delay max -max_paths 1 -nworst 1 > reports/data_buffer.rep
+report_area >> reports/data_buffer.rep
+report_power -hier >> reports/data_buffer.rep
+# Step 5: Output final VHDL and Verilog files
+write_file -format verilog -hierarchy -output "mapped/data_buffer.v"
+Writing verilog file '/home/ecegrid/a/mg78/ece337/CDL/mapped/data_buffer.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+echo "\nScript Done\n"
+
+Script Done
+
+echo "\nChecking Design\n"
+
+Checking Design
+
+check_design
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP1
+Date:        Thu Apr 29 01:52:22 2021
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     16
+    Unconnected ports (LINT-28)                                    16
+
+Cells                                                               6
+    Connected to power or ground (LINT-32)                          5
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'data_buffer', port 'rx_packet_data[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer', port 'rx_packet_data[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer', port 'rx_packet_data[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer', port 'rx_packet_data[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer', port 'rx_packet_data[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer', port 'rx_packet_data[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer', port 'rx_packet_data[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer', port 'rx_packet_data[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW_cmp_0', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW_cmp_0', port 'GE_LT' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW_cmp_0', port 'GE_GT_EQ' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW_cmp_0', port 'EQ_NE' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW01_sub_2', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW01_sub_2', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer', a pin on submodule 'sub_91' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'lt_87' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'lt_87' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_LT' is connected to logic 1. 
+Warning: In design 'data_buffer', a pin on submodule 'lt_87' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_GT_EQ' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'sub_88' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'data_buffer', the same net is connected to more than one pin on submodule 'lt_87'. (LINT-33)
+   Net 'n2' is connected to pins 'TC', 'GE_GT_EQ''.
+quit
+
+Thank you...
+Done
+
+

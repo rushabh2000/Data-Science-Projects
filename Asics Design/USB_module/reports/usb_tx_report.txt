@@ -1,0 +1,30 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/osu05_stdcells.vhdl
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                    256       252         4     98.43
+
+=================================================================================
+=== File: mapped/usb_tx.v
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            1         1         0    100.00
+    Toggle Bins                   1276      1097       179     85.97
+
+=================================================================================
+=== File: source/tb_usb_tx.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                          122       113         9     92.62
+    Branches                        13        10         3     76.92
+    FEC Condition Terms              7         4         3     57.14
+    Toggle Bins                   2300       105      2195      4.56
+
+
+Total Coverage By File (code coverage only, filtered view): 66.17%
+

@@ -1,0 +1,40 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/osu05_stdcells.vhdl
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                    242       234         8     96.69
+
+=================================================================================
+=== File: /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Source/ahb_lite_bus_cdl.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           97        85        12     87.62
+    Branches                        26        19         7     73.07
+    FEC Condition Terms             21         8        13     38.09
+    Toggle Bins                    610       397       213     65.08
+
+=================================================================================
+=== File: mapped/top_level_cdl.v
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            4         4         0    100.00
+    Toggle Bins                   2436      2096       340     86.04
+
+=================================================================================
+=== File: source/tb_ahb_lite_interface.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                          282       282         0    100.00
+    Toggle Bins                    680       472       208     69.41
+
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 4
+
+Total Coverage By File (code coverage only, filtered view): 72.16%
+

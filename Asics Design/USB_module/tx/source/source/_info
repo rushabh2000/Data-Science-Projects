@@ -1,0 +1,250 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg104/ece337/design lab/source
+vcontroller
+Z1 DXx6 sv_std 3 std 0 22 >9az<^>2ff9DAl3OFGaAf1
+!s110 1619463727
+!i10b 1
+!s100 l`=PPVjEia@gnoO65I2VK0
+IVHIbG^V1Tbl9Sb]I]1oPl2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 controller_sv_unit
+S1
+R0
+w1619062887
+8/home/ecegrid/a/mg104/ece337/design lab/source/controller.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/controller.sv
+L0 8
+Z3 OE;L;10.7a;67
+r1
+!s85 0
+31
+!s108 1619463727.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/controller.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/controller.sv|
+!i113 0
+Z4 o-nologo -work source -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 tCvgOpt 0
+vdata_buffer
+R1
+!s110 1619476320
+!i10b 1
+!s100 ^`fecbjl[DJz>ogbi@z=@0
+ILigJ2S0zDA=6@ZWe_]YSB3
+R2
+!s105 data_buffer_sv_unit
+S1
+R0
+w1619476320
+8/home/ecegrid/a/mg104/ece337/design lab/source/data_buffer.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/data_buffer.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1619476320.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/data_buffer.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/data_buffer.sv|
+!i113 0
+R4
+R5
+vencoder
+R1
+!s110 1619061735
+!i10b 1
+!s100 IBYgbVb][m=6<d56RA>913
+I7c[h4@JIB3e^8Ol]V?8=30
+R2
+!s105 encoder_sv_unit
+S1
+R0
+w1619061735
+8/home/ecegrid/a/mg104/ece337/design lab/source/encoder.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/encoder.sv
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1619061735.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/encoder.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/encoder.sv|
+!i113 0
+R4
+R5
+vflex_counter
+R1
+!s110 1618966025
+!i10b 1
+!s100 ;X?jWNEVQ6B:3ciKo34[g3
+ICBcZ<<eP6@8_PlY9HDGhN1
+R2
+!s105 flex_counter_sv_unit
+S1
+R0
+w1618872394
+8/home/ecegrid/a/mg104/ece337/design lab/source/flex_counter.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/flex_counter.sv
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1618966025.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/flex_counter.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/flex_counter.sv|
+!i113 0
+R4
+R5
+vflex_counter2
+R1
+!s110 1618966339
+!i10b 1
+!s100 ak=2KEfA3<cNhYcJAGPm=3
+IUP0F[KZU]V0oDVbZzKgRb1
+R2
+!s105 flex_counter2_sv_unit
+S1
+R0
+w1618966339
+8/home/ecegrid/a/mg104/ece337/design lab/source/flex_counter2.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/flex_counter2.sv
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1618966339.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/flex_counter2.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/flex_counter2.sv|
+!i113 0
+R4
+R5
+vtb_data_buffer
+R1
+!s110 1619477594
+!i10b 1
+!s100 nlPdI:^RE>7<?VT9n@S6l1
+IZoNN[<WMEn>PRkkgm=V6?1
+R2
+!s105 tb_data_buffer_sv_unit
+S1
+R0
+w1619477594
+8/home/ecegrid/a/mg104/ece337/design lab/source/tb_data_buffer.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/tb_data_buffer.sv
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1619477594.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/tb_data_buffer.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/tb_data_buffer.sv|
+!i113 0
+R4
+R5
+vtb_tx
+R1
+!s110 1619463730
+!i10b 1
+!s100 R6dlQDLH[?`Ti?8Y2:dFG2
+I?>_FBa:L:e[fIVb=NhcAN0
+R2
+!s105 tb_tx_sv_unit
+S1
+R0
+w1619062920
+8/home/ecegrid/a/mg104/ece337/design lab/source/tb_tx.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/tb_tx.sv
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1619463730.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/tb_tx.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/tb_tx.sv|
+!i113 0
+R4
+R5
+vtimer
+R1
+!s110 1619062534
+!i10b 1
+!s100 1UJ>Y@l9f_Q9K56=NZI_F3
+ImZiPROMoRHCblam9ndb[@1
+R2
+!s105 timer_sv_unit
+S1
+R0
+w1619062534
+8/home/ecegrid/a/mg104/ece337/design lab/source/timer.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/timer.sv
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1619062534.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/timer.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/timer.sv|
+!i113 0
+R4
+R5
+vtx
+R1
+!s110 1619329103
+!i10b 1
+!s100 JX<lc]lP@oYU<eP=eKV2@3
+I65M^X1k]WVB>R0m2Y9N4@1
+R2
+!s105 tx_sv_unit
+S1
+R0
+w1618966488
+8/home/ecegrid/a/mg104/ece337/design lab/source/tx.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/tx.sv
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1619329103.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/tx.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/tx.sv|
+!i113 0
+R4
+R5
+vtx_pts
+R1
+!s110 1619333775
+!i10b 1
+!s100 n5A<8^L1MzI2iUO]U5b3d2
+IjNVneRGedNcJY7@Wcf]YA2
+R2
+!s105 tx_pts_sv_unit
+S1
+R0
+w1618636355
+8/home/ecegrid/a/mg104/ece337/design lab/source/tx_pts.sv
+F/home/ecegrid/a/mg104/ece337/design lab/source/tx_pts.sv
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1619333775.000000
+!s107 /home/ecegrid/a/mg104/ece337/design lab/source/tx_pts.sv|
+!s90 -nologo|-work|source|/home/ecegrid/a/mg104/ece337/design lab/source/tx_pts.sv|
+!i113 0
+R4
+R5
